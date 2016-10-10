@@ -1,0 +1,92 @@
+{
+	"ext_name": {
+		"message":"Zimbra Mail Notifications"
+	},
+	"ext_short_name": {
+		"message":"Zimbra Mail Not."
+	},
+	"ext_description": {
+		"message":"Notifies when you receive new messages in your Zimbra account"
+	},
+	"ba_default_title": {
+		"message":"Zimbra Mail Notifications"
+	},
+	"options_page_title": {
+		"message":"Zimbra Mail Notifications Preferences"
+	},
+	"options_label_interval": {
+		"message":"Interval (minutes)"
+	},
+	"options_label_server_URL": {
+		"message":"URL"
+	},
+	"options_label_permanent_notifications": {
+		"message":"Permanent notifications"
+	},
+	"options_label_show_notifications": {
+		"message":"Show notifications"
+	},
+	"options_btn_save": {
+		"message":"Save"
+	},
+	"options_btn_por_defecto": {
+		"message":"Default"
+	},
+	"options_btn_cancel": {
+		"message":"Cancel"
+	},
+	"options_confirm_por_defecto": {
+		"message":"¿Restore default options? This accion can not be undone"
+	},
+	"options_invalid_url": {
+		"message":"Invalid URL"
+	},
+	"options_saved": {
+		"message":"Saved!"
+	},
+	"mail_page_title": {
+		"message":"Zimbra Mail Notifications"
+	},
+	"mail_no_message": {
+		"message":"There are no unread messages"
+	},
+	"mail_consultando_mensajes": {
+		"message":"...Querying messages..."
+	},
+	"new_mail_notification_message": {
+		"message":"$numero$ unread message(s)",
+		"placeholders": {
+      "numero": {
+        "content": "$1"
+      }
+    }
+	},
+	"ba_btn_show_hidden": {
+		"message":"Show hidden"
+	},
+	"notif_zimbra_mail": {
+		"message":"Zimbra Mail"
+	},
+	"notif_zimbra_mail_error": {
+		"message":"Zimbra Mail Error"
+	},
+	"notif_do_not_show_again_for_these_messages": {
+		"message":"Do not show again for these messages"
+	},
+	"error_generico": {
+		"message":"Generic error"
+	},
+	"error_generico_quiza_url": {
+		"message":"Generic error. Incorrect URL maybe?"
+	},
+	"error": {
+    "message": "Error: $details$",
+    "description": "Generic error template. Expects error parameter to be passed in.",
+    "placeholders": {
+      "details": {
+        "content": "$1",
+        "example": "Failed to fetch RSS feed."
+      }
+    }
+  }
+}

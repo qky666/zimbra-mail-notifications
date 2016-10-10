@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-csp ng-app="zimbraNotificationsOptions" ng-controller="OptionsCtrl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title ng-bind="ui.pageTitle"></title>
+        
+        <link rel="stylesheet" type="text/css" href="../css/comun.css" />
+        
+        <link rel="stylesheet" type="text/css" href="../lib/angular/angular-csp.css" />
+        
+        <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../lib/bootstrap/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-horizontal form-options" role="form">
+                <div class="form-group">
+                    <label class="control-label col-md-3" for="url">{{ ui.labelServerURL }}:</label>
+                    <div class="col-md-3">
+                        <input id="url" class="form-control" placeholder="http://" type="text" ng-change="urlZimbraModificado()" ng-model="opciones.urlZimbra" />
+                    </div>
+                    <span class="status col-md-3" ng-style="estilo.colorStatusUrl" ng-bind="statusURL"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-md-3" for="minutos">{{ ui.labelInterval }}:</label>
+                    <div class="col-md-1">
+                        <input id="minutos" class="form-control" type="number" ng-model="opciones.minutosIntervalo" min="1" max="15"/>
+                    </div>
+                    <span class="status col-md-3" ng-bind="status"></span>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" ng-model="opciones.mostrarNotificaciones">{{ ui.labelShowNotifications }}
+                            </label>
+                        </div>
+                    </div>
+                    <span class="status col-md-3" ng-bind="status"></span>
+                </div> 
+                
+                <div class="form-group" ng-show="opciones.mostrarNotificaciones && !navegadorEsFirefox()">
+                    <div class="col-md-offset-3 col-md-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" ng-model="opciones.notificacionesPermanentes">{{ ui.labelPermanentNotifications }}
+                            </label>
+                        </div>
+                    </div>
+                    <span class="status col-md-3" ng-bind="status"></span>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-10">
+                        <button id="saveButton" class="btn btn-primary" ng-disabled="deshabilitarBotones" ng-click="guardarOpciones()" ng-bind="ui.btnSave"></button>
+                        <!-- <button id="defaultButton" class="btn btn-warning" ng-disabled="deshabilitarBotones" ng-click="opcionesPorDefecto()" ng-bind="ui.btnPorDefecto"></button> -->
+                        <button id="cancelButton" class="btn btn-default" ng-disabled="deshabilitarBotones" ng-click="restablecerOpciones({limpiarStatus:true})" ng-bind="ui.btnCancel"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="../lib/angular/angular.min.js"></script>
+        <script type="text/javascript" src="../js/comun/constantes.js"></script>
+        <script type="text/javascript" src="../js/clases/UtilesURL.js"></script>
+        <script type="text/javascript" src="../js/clases/UtilesFirefox.js"></script>
+        <script type="text/javascript" src="../js/clases/OpcionesStorage.js"></script>
+        <script type="text/javascript" src="../js/clases/LogZimbra.js"></script>
+        <script type="text/javascript" src="../js/opciones.js"></script>
+    </body>
+</html>

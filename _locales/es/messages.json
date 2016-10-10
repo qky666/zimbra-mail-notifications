@@ -1,0 +1,92 @@
+{
+	"ext_name": {
+		"message":"Notificaciones Zimbra Mail"
+	},
+	"ext_short_name": {
+		"message":"Not. Zimbra Mail"
+	},
+	"ext_description": {
+		"message":"Notifica cuando recibes nuevos mensajes en tu cuenta Zimbra"
+	},
+	"ba_default_title": {
+		"message":"Notificaciones Zimbra Mail"
+	},
+	"options_page_title": {
+		"message":"Preferencias Notificaciones Zimbra Mail"
+	},
+	"options_label_interval": {
+		"message":"Intervalo (minutos)"
+	},
+	"options_label_server_URL": {
+		"message":"URL"
+	},
+	"options_label_permanent_notifications": {
+		"message":"Notificaciones permanentes"
+	},
+	"options_label_show_notifications": {
+		"message":"Mostrar notificaciones"
+	},
+	"options_btn_save": {
+		"message":"Guardar"
+	},
+	"options_btn_por_defecto": {
+		"message":"Por Defecto"
+	},
+	"options_btn_cancel": {
+		"message":"Cancelar"
+	},
+	"options_confirm_por_defecto": {
+		"message":"¿Restaurar opciones por defecto? Esta acción no se puede deshacer"
+	},
+	"options_invalid_url": {
+		"message":"URL no válida"
+	},
+	"options_saved": {
+		"message":"¡Guardado!"
+	},
+	"mail_page_title": {
+		"message":"Notificaciones Zimbra Mail"
+	},
+	"mail_no_message": {
+		"message":"No hay mensajes no leídos"
+	},
+	"mail_consultando_mensajes": {
+		"message":"...Consultando mensajes..."
+	},
+	"new_mail_notification_message": {
+		"message":"$numero$ mensaje(s) no leído(s)",
+		"placeholders": {
+      "numero": {
+        "content": "$1"
+      }
+    }
+	},
+	"ba_btn_show_hidden": {
+		"message":"Mostrar ocultos"
+	},
+	"notif_zimbra_mail": {
+		"message":"Correo Zimbra"
+	},
+	"notif_zimbra_mail_error": {
+		"message":"Error Correo Zimbra"
+	},
+	"notif_do_not_show_again_for_these_messages": {
+		"message":"No volver a mostrar para estos mensajes"
+	},
+	"error_generico": {
+		"message":"Error genérico"
+	},
+	"error_generico_quiza_url": {
+		"message":"Error genérico. ¿Quizá URL incorrecta?"
+	},
+	"error": {
+    "message": "Error: $details$",
+    "description": "Generic error template. Expects error parameter to be passed in.",
+    "placeholders": {
+      "details": {
+        "content": "$1",
+        "example": "Failed to fetch RSS feed."
+      }
+    }
+  }
+}
