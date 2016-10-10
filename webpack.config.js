@@ -1,6 +1,24 @@
 var webpack = require('webpack')
 var path = require('path')
 
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HTMLWebpackPluginConfigPopup = new HtmlWebpackPlugin({
+  title: 'Zimbra Mail Notifications - Popup',
+  template: path.join(__dirname, 'src', 'html', 'popup.html'),
+  filename: path.join('..','html','popup.html'),
+  inject: 'body',
+  chunks: ['popup']
+})
+
+var HTMLWebpackPluginConfigOpciones = new HtmlWebpackPlugin({
+  title: 'Zimbra Mail Notifications - Opciones',
+  template: path.join(__dirname, 'src', 'html', 'opciones.html'),
+  filename: path.join('..','html','opciones.html'),
+  inject: 'body',
+  chunks: ['opciones']
+})
+
+
 var config = {
   entry: {
     background: path.join(__dirname, "src", "background.js"),
@@ -22,7 +40,8 @@ var config = {
         }
       }
     ]
-  }
+  },
+  plugins: [HTMLWebpackPluginConfigPopup, HTMLWebpackPluginConfigOpciones]
 }
 
 module.exports = config
