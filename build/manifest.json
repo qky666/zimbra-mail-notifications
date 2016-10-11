@@ -30,8 +30,7 @@
         "webNavigation"
     ],
     "background": {
-        "scripts": 
-            ["js/background-bundle.js"],
+        "scripts": ["js/background-bundle.js"],
         "persistent": false
     },
     "options_page": "html/opciones.html"

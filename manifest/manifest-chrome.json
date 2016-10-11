@@ -16,11 +16,11 @@
             "256": "img/256.png"
         },
         "default_title": "__MSG_ba_default_title__",
-        "default_popup": "html/popupDefecto.html"
+        "default_popup": "html/popup.html"
     },
     "description": "__MSG_ext_description__",
     "manifest_version": 2,
-    "version": "1.2.0",
+    "version": "1.3.0",
     "permissions": [
         "<all_urls>",
         "tabs",
@@ -30,26 +30,7 @@
         "webNavigation"
     ],
     "background": {
-        "scripts": 
-            ["js/comun/constantes.js",
-             
-             "js/clases/CoordinadorZimbra.js",
-             "js/clases/GestorAlarma.js",
-             "js/clases/GestorBadge.js",
-             "js/clases/GestorMensajes.js",
-             "js/clases/GestorNotificaciones.js",
-             "js/clases/GestorServidor.js",
-             "js/clases/LogZimbra.js",
-             "js/clases/Mensaje.js",
-             "js/clases/OpcionesStorage.js",
-             "js/clases/ServidorZimbra.js",
-             "js/clases/UtilesFirefox.js",
-             "js/clases/UtilesPopup.js",
-             "js/clases/UtilesURL.js",
-             "js/clases/ZimbraNavegador.js",
-             
-             "js/background.js"
-            ],
+        "scripts": ["js/background-bundle.js"],
         "persistent": false
     },
     "options_page": "html/opciones.html"
