@@ -6,9 +6,11 @@ import MensajesNoLeidosVisibles from './MensajesNoLeidosVisibles.jsx'
 import Botones from './Botones.jsx'
 
 export default () => (
-	<div className="container main" role="main">
-		<ResumenEstado />
-		<MensajesNoLeidosVisibles />
-		<Botones />
+	<div className="main" role="main">
+		<Grid>
+			<ResumenEstado />
+			<MensajesNoLeidosVisibles />
+			<Botones />
+		</Grid>
 	</div>
 )
