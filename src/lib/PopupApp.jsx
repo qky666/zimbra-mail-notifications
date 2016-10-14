@@ -6,7 +6,7 @@ import MensajesNoLeidosVisibles from './MensajesNoLeidosVisibles.jsx'
 import Botones from './Botones.jsx'
 
 export default () => (
-	<div>
+	<div className="container main" role="main">
 		<ResumenEstado />
 		<MensajesNoLeidosVisibles />
 		<Botones />
