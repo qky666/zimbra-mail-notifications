@@ -1,4 +1,5 @@
 import LogZimbra from './LogZimbra.js'
+import UtilesURL from './UtilesURL.js'
 
 export default class ServidorZimbra {
 	constructor(urlAsString) {

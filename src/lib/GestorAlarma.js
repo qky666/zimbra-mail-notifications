@@ -16,7 +16,7 @@ export default class GestorAlarma {
 		GestorServidor.getServidor(function(servidor) {
 			// Si la url está vacía, no pongo alarma
 			if (servidor.urlAsString == "") {
-				chrome.alarms.clear(constantes.constantes.ID_ALARMA_CORREO, function (wasCleared) {} )
+				chrome.alarms.clear(constantes.ID_ALARMA_CORREO, function (wasCleared) {} )
 				return
 			}
 
@@ -27,7 +27,7 @@ export default class GestorAlarma {
 			    periodo = constantes.periodoOverride
 			  }
 
-			  chrome.alarms.create(constantes.constantes.ID_ALARMA_CORREO, {delayInMinutes:periodo, periodInMinutes: periodo});  		
+			  chrome.alarms.create(constantes.ID_ALARMA_CORREO, {delayInMinutes:periodo, periodInMinutes: periodo});  		
 			}) 
 		})
 	}
